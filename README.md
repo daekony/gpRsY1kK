@@ -39,10 +39,10 @@ customer_id,customer_name, customer_mobile, frequency
 
 
 ### 挑戰二: Django 客戶排序 (RFM) (folder: x_2)
-> 請於 Django 中設計一個 view，並完成以下 4 個函式，再透過 URL GET，以 return json 的型式完成函式回傳。 
+> 請於 Django 中設計一個 view，並完成 4 個 RFM 函式，再透過 URL GET，以 return json 的型式完成函式回傳。 
 
 ```
-RFM 指標:
+RFM 指標說明:
 用三個向度分析消費者的重要程度：
 1. Recency 新進度: 最後一次消費距離現在的時距
 2. Frequency 消費頻率: 此消費者消費次數的密集度
@@ -58,12 +58,13 @@ RFM 指標:
   - F ( `int` frequency )
   - M ( `int` monetary )
   - ID ( `int` ID)
- 
+
 > 需要設計的函式（亦可以寫在同一個函式，指標用 flag 判斷）: 
 - 以 R 值排序 (大到小) ( `function` sort_by_recency( ) )
 - 以 F 值排序 (大到小) ( `function` sort_by_frequency( ) )
 - 以倒 M 值排序 (小到大) ( `function` sort_by_monetary( ) )
 - 以 RFM 總值排序 (大到小) ( `function` sort_by_RFM( ) )
+
 
 ### 挑戰三: Project 開發分配 (folder: x_3)
 > 現在有一個商用軟體產品，該產品剛上線滿一年，已有一定的客戶量體，但系統穩定度不足，且功能仍然簡陋，因此產品開始有許多的需求要被分配開發資源，假設現在是星期三早上10點鐘，請您針對以下狀況進行思考，並說明每一項的應對方式:
