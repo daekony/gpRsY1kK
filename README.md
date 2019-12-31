@@ -1,8 +1,6 @@
 # ORDERLY Python / Django Interview
 Python / Django Web Developer
 
-Hi, PinChia,
-
 感謝您
 
 這是根據您的回覆所訂製的問題，大約會花費 3- 5 小時的挑戰時間
