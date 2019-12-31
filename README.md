@@ -58,10 +58,10 @@ RFM 指標說明:
   - ID ( `int` ID)
 
 > 需要設計的函式（亦可以寫在同一個函式，指標用 flag 判斷）: 
-- 以 R 值排序 (大到小) ( `function` sort_by_recency( ) )
-- 以 F 值排序 (大到小) ( `function` sort_by_frequency( ) )
-- 以倒 M 值排序 (小到大) ( `function` sort_by_monetary( ) )
-- 以 RFM 總值排序 (大到小) ( `function` sort_by_RFM( ) )
+- 將 ID 以倒 R 值排序回傳 (大到小) ( `function` sort_by_recency( ) )
+- 將 ID 以倒 F 值排序回傳 (大到小) ( `function` sort_by_frequency( ) )
+- 將 ID 以 M 值排序回傳 (小到大) ( `function` sort_by_monetary( ) )
+- 將 ID 以倒 RFM 總值排序回傳 (大到小) ( `function` sort_by_RFM( ) )
 
 
 ### 挑戰三: Project 開發分配 (folder: x_3)
