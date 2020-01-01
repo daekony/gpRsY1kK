@@ -1,11 +1,11 @@
-import sys, csv, operator, random, string, json, requests
-from django.shortcuts import render,redirect
-from django.http import HttpResponse
+import sys, csv, operator, random, string, json, requests,os
+#from django.shortcuts import render,redirect
+#from django.http import HttpResponse
 
 
 def sort_by_recency(request):
 	CurrentDirectory = os.getcwd()
-	path = CurrentDirectory + "\\" + "data" +"\\"+"rfm.csv"
+	path = CurrentDirectory  +"\\"+"rfm.csv"
 
 	with open(path,"r", newline='') as csvfile:
 		reader = csv.reader(csvfile)
@@ -30,7 +30,7 @@ def sort_by_recency(request):
 
 def sort_by_frequency(request):
 	CurrentDirectory = os.getcwd()
-	path = CurrentDirectory + "\\" + "data" +"\\"+"rfm.csv"
+	path = CurrentDirectory  +"\\"+"rfm.csv"
 
 	with open(path,"r", newline='') as csvfile:
 		reader = csv.reader(csvfile)
@@ -56,7 +56,7 @@ def sort_by_frequency(request):
 
 def sort_by_monetary(request):
 	CurrentDirectory = os.getcwd()
-	path = CurrentDirectory + "\\" + "data" +"\\"+"rfm.csv"
+	path = CurrentDirectory  +"\\"+"rfm.csv"
 
 	with open(path,"r", newline='') as csvfile:
 		reader = csv.reader(csvfile)
@@ -83,7 +83,7 @@ def sort_by_monetary(request):
 
 def sort_by_RFM(request):
 	CurrentDirectory = os.getcwd()
-	path = CurrentDirectory + "\\" + "data" +"\\"+"rfm.csv"
+	path = CurrentDirectory  +"\\"+"rfm.csv"
 
 	with open(path,"r", newline='') as csvfile:
 		reader = csv.reader(csvfile)
