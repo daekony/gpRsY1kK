@@ -1,6 +1,6 @@
 import sys, csv, operator, random, string, json, requests,os
-#from django.shortcuts import render,redirect
-#from django.http import HttpResponse
+from django.shortcuts import render,redirect
+from django.http import HttpResponse
 
 
 def sort_by_recency(request):
@@ -25,7 +25,7 @@ def sort_by_recency(request):
 		newzip.append(sorted_data)
 		metadata = json.dumps(newzip)
 
-		return render (request,'yourhtml' ,metadata)
+		return render(request,'yourhtml' ,metadata)
 
 
 def sort_by_frequency(request):
@@ -52,7 +52,7 @@ def sort_by_frequency(request):
 		metadata = json.dumps(newzip)
 
 
-		return render (request,'yourhtml' ,metadata)
+		return render(request,'yourhtml' ,metadata)
 
 def sort_by_monetary(request):
 	CurrentDirectory = os.getcwd()
@@ -77,7 +77,7 @@ def sort_by_monetary(request):
 		newzip.append(sorted_data)
 		metadata = json.dumps(newzip)
 
-		return render (request,'yourhtml' ,metadata)
+		return render(request,'yourhtml' ,metadata)
 
 
 
@@ -111,6 +111,6 @@ def sort_by_RFM(request):
 		newzip.append(sorted_data)
 		metadata = json.dumps(newzip)
 
-		return render (request,'yourhtml' ,metadata)
+		return render(request,'yourhtml' ,metadata)
 
 
